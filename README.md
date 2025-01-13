@@ -3,9 +3,9 @@
 This Laravel project provides a RESTful API for managing projects and tasks. It demonstrates a one-to-many relationship between projects and tasks, with full CRUD operations for both resources.
 
 ## Requirements
-PHP 8.0+
-Composer
-MySQL or compatible database
+- PHP 8.0+
+- Composer
+- MySQL or compatible database
 
 ## Steps to run the project
 
@@ -34,20 +34,20 @@ php artisan test
 ## API Documentation
 
 ### Projects
-GET /api/projects: List all projects
-POST /api/projects: Create a new project
-GET /api/projects/{id}: Get a specific project
-PUT /api/projects/{id}: Update a project
-DELETE /api/projects/{id}: Delete a project
-GET /api/projects/{id}/tasks: Get all tasks of a specific project
-POST /api/projects/{id}/tasks: Create a new task under a specific project
+- GET /api/projects: List all projects
+- POST /api/projects: Create a new project
+- GET /api/projects/{id}: Get a specific project
+- PUT /api/projects/{id}: Update a project
+- DELETE /api/projects/{id}: Delete a project
+- GET /api/projects/{id}/tasks: Get all tasks of a specific project
+- POST /api/projects/{id}/tasks: Create a new task under a specific project
 
 ### Tasks
-GET /api/tasks: List all tasks
-POST /api/tasks: Create a new task
-GET /api/tasks/{id}: Get a specific task
-PUT /api/tasks/{id}: Update a task
-DELETE /api/tasks/{id}: Delete a task
+- GET /api/tasks: List all tasks
+- POST /api/tasks: Create a new task
+- GET /api/tasks/{id}: Get a specific task
+- PUT /api/tasks/{id}: Update a task
+- DELETE /api/tasks/{id}: Delete a task
 
 ## License
 
