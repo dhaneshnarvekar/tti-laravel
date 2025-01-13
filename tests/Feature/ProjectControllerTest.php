@@ -21,7 +21,7 @@ class ProjectControllerTest extends TestCase
                  ->assertJsonCount(3);
     }
 
-    public function test_load_one_project()
+    public function test_create_project()
     {
         $data = [
             'title' => 'Test Project',
