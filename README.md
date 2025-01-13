@@ -26,7 +26,7 @@ php artisan db:seed
 php artisan serve
 ```
 6. View the API documentation 
-7. Run unit tests using following command
+7. Run feature tests using following command
 ```bash
 php artisan test
 ```
