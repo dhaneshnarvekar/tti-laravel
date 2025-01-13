@@ -1,0 +1,332 @@
+{
+	"info": {
+		"_postman_id": "1b9c315c-849d-4198-a3f6-9773dd1c5e46",
+		"name": "TTI Laravel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3140918"
+	},
+	"item": [
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "List all projects",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/api/projects",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new project",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "New one",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "sample description for project",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "in_progress",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/api/projects",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a specific project",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base}}/api/projects/17",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"projects",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a project",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "New Project Again",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "sample description for project",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "in_progress",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/api/projects/14",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"projects",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a specific project",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/api/projects/16",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"projects",
+								"16"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"item": [
+				{
+					"name": "List all tasks",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/api/tasks",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a specific task",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/api/tasks/8",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new task under a specific project",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "New Task",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "task decription",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "to_do",
+									"type": "text"
+								},
+								{
+									"key": "project_id",
+									"value": "15",
+									"type": "text"
+								},
+								{
+									"key": "assigned_to",
+									"value": "dhanesh",
+									"type": "text"
+								},
+								{
+									"key": "due_date",
+									"value": "2025-02-01",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/api/projects/15/tasks",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"projects",
+								"15",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{base}}/api/tasks/8",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "title",
+									"value": "Updated Title",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "done",
+									"type": "text"
+								},
+								{
+									"key": "project_id",
+									"value": "16",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base}}/api/tasks/9",
+							"host": [
+								"{{base}}"
+							],
+							"path": [
+								"api",
+								"tasks",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

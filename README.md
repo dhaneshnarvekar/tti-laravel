@@ -25,7 +25,7 @@ php artisan migrate
 php artisan db:seed
 php artisan serve
 ```
-6. View the API documentation 
+6. View the API documentation at https://documenter.getpostman.com/view/3140918/2sAYQXnXeJ#014eaffc-9439-48d4-a289-9472c4079de4
 7. Run feature tests using following command
 ```bash
 php artisan test
@@ -44,7 +44,6 @@ php artisan test
 
 ### Tasks
 - GET /api/tasks: List all tasks
-- POST /api/tasks: Create a new task
 - GET /api/tasks/{id}: Get a specific task
 - PUT /api/tasks/{id}: Update a task
 - DELETE /api/tasks/{id}: Delete a task

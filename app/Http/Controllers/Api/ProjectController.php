@@ -33,7 +33,7 @@ class ProjectController extends Controller
      */
     public function show(Project $project): JsonResponse
     {
-        return response()->json($project);
+        return response()->json($project->load('tasks'));
     }
 
     /**
